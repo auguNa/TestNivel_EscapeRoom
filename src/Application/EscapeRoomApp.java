@@ -45,7 +45,7 @@ public class EscapeRoomApp {
             try {
                 inventory.addClue(clue);
                 room.addClue(clue);
-                System.out.println("Clue added successfully: " + room.getName() +".");
+                System.out.println("Clue added successfully to : " + room.getName() + ".");
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
@@ -73,7 +73,7 @@ public class EscapeRoomApp {
             try {
                 inventory.addDecoration(decorationObject);
                 room.addDecoration(decorationObject);
-                System.out.println("Decoration added successfully to the room: " + room.getName() +".");
+                System.out.println("Decoration added successfully to the room: " + room.getName() + ".");
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
@@ -128,14 +128,7 @@ public class EscapeRoomApp {
             System.out.println("No room found with this id.");
         }
     }
-
-    static void listRooms() {
-        if (inventory.getAllRooms().isEmpty()) {
-            System.out.println("No rooms found.");
-        } else {
-            inventory.getAllRooms().forEach(System.out::println);
-        }
-    }
 }
+
 
 

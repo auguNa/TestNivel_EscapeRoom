@@ -15,7 +15,6 @@ public class App {
             System.out.println("3.- Add Decoration Room's");
             System.out.println("4.- List Inventory");
             System.out.println("5.- Delete Inventory Item");
-            System.out.println("6.- List Rooms");
             System.out.println("0.- End of Application");
             System.out.println("Enter your option: ");
 
@@ -36,9 +35,6 @@ public class App {
                     break;
                 case 5:
                     deleteInventoryItem();
-                    break;
-                case 6:
-                    listRooms();
                     break;
                 case 0:
                     System.out.println("Application ended.. ");
